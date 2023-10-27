@@ -1,6 +1,27 @@
 import React from 'react'
+import { useNavigate, Form } from 'react-router-dom'
 import Formulario from '../components/Formulario'
-import { Navigate, useNavigate} from "react-router-dom" 
+
+export async function action( {request} ) {
+  const formData = await request.formData()
+  
+  const datos = Object.fromEntries(formData)
+
+  //Validacion
+  const errores = []
+  if(Object.values(datos).includes('')) {
+    errores.push('Todos los campos son obligatorios')
+  }
+
+  //Retornar datos si hay errores
+  if(Object.keys(errores).length) {
+    return errores
+  }
+
+  console.log(errores)
+  
+  return null
+}
 
 function NuevoCliente() {
 
@@ -21,16 +42,18 @@ function NuevoCliente() {
       </div>
 
       <div className='bg-white shadow rounded-md md:w-3/4 mx-auto px-5 py-10 mt-20'>
-        <form>
+
+        <Form
+           method='POST'
+        >
           <Formulario />
 
           <input 
               type="submit"
               className='mt-5 w-full bg-blue-800 p-3 uppercase font-bold text-white text-lg'
               value={'Registrar Cliente'}
-
           />
-        </form>
+        </Form>
       </div>
     </>
   )
