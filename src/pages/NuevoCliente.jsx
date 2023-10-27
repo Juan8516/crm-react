@@ -1,6 +1,7 @@
 import React from 'react'
-import { useNavigate, Form } from 'react-router-dom'
+import { useNavigate, Form, useActionData } from 'react-router-dom'
 import Formulario from '../components/Formulario'
+import Error from '../components/Error'
 
 export async function action( {request} ) {
   const formData = await request.formData()
@@ -25,8 +26,9 @@ export async function action( {request} ) {
 
 function NuevoCliente() {
 
+  const errores = useActionData()
   const navigate = useNavigate()
-
+  
   return (
     <>
       <h1 className='font-black text-4xl text-blue-900'>Nuevo Cliente</h1>
@@ -42,6 +44,8 @@ function NuevoCliente() {
       </div>
 
       <div className='bg-white shadow rounded-md md:w-3/4 mx-auto px-5 py-10 mt-20'>
+
+        {errores?.length && errores.map(( error, i) => <Error key={i}>{error}</Error>)}
 
         <Form
            method='POST'
