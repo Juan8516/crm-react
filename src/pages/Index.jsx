@@ -6,7 +6,7 @@ import Cliente from '../components/Cliente';
 
 export function loader() {
   const clientes = obtenerClientes()
-  return clientes
+  return
 }
 
 function Index() {
