@@ -1,39 +1,47 @@
 {
-    "clientes" : [
-        {
-            "id": 1,
-            "nombre": "Juan",
-            "telefono": 102013313,
-            "email": "juan@juan.com",
-            "empresa": "Export S.A"
-        },
-        {
-            "id": 2,
-            "nombre": "Karen",
-            "telefono": 138198313,
-            "email": "karen@juan.com",
-            "empresa": "Datex"
-        },
-        {
-            "id": 3,
-            "nombre": "Josue",
-            "telefono": 31983913,
-            "email": "josue@juan.com",
-            "empresa": "Emet"
-        },
-        {
-            "id": 4,
-            "nombre": "Miguel",
-            "telefono": 319381983,
-            "email": "miguel@juan.com",
-            "empresa": "Maderas Ruiz"
-        },
-        {
-            "id": 5,
-            "nombre": "Pedro",
-            "telefono": 1398198938,
-            "email": "pedro@juan.com",
-            "empresa": "Cauchos ECO"
-        }
-    ]
+  "clientes": [
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "telefono": 102013313,
+      "email": "juan@juan.com",
+      "empresa": "Export S.A"
+    },
+    {
+      "id": 2,
+      "nombre": "Karen",
+      "telefono": 138198313,
+      "email": "karen@juan.com",
+      "empresa": "Datex"
+    },
+    {
+      "id": 3,
+      "nombre": "Josue",
+      "telefono": 31983913,
+      "email": "josue@juan.com",
+      "empresa": "Emet"
+    },
+    {
+      "id": 4,
+      "nombre": "Miguel",
+      "telefono": 319381983,
+      "email": "miguel@juan.com",
+      "empresa": "Maderas Ruiz"
+    },
+    {
+      "id": 5,
+      "nombre": "Pedro",
+      "telefono": 1398198938,
+      "email": "pedro@juan.com",
+      "empresa": "Cauchos ECO"
+    },
+    {
+      "nombre": "Juan Manuel Salazar",
+      "empresa": "Adecco S.A",
+      "email": "sonico@sonico.com",
+      "telefono": "315214712",
+      "notas": "Cliente solicita cambios en el diseño de la pagina web.",
+      "id": 6
+    }
+  ]
 }
