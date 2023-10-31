@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate, Form, useActionData } from 'react-router-dom'
+import { useNavigate, Form, useActionData, redirect } from 'react-router-dom'
 import Formulario from '../components/Formulario'
 import Error from '../components/Error'
 import { agregarCliente } from '../data/Clientes'
@@ -25,8 +25,8 @@ export async function action( {request} ) {
     return errores
   }
   
-  agregarCliente(datos)
-  return null
+  await agregarCliente(datos)
+  return redirect('/')
 }
 
 function NuevoCliente() {
