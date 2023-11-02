@@ -37,6 +37,11 @@ function Cliente( {cliente} ) {
                 <Form
                     method= 'post'
                     action= {`/clientes/${id}/eliminar`}
+                    onSubmit={(e) => {
+                        if(!confirm('Desea eliminar este cliente ?')) {
+                            e.preventDefault()
+                        }
+                    }}
                 >
                     <button
                         type='submit'
