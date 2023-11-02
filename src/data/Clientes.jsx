@@ -40,7 +40,7 @@ export async function actualizarCliente(id, datos) {
     }
 }
 
-export async function eliminarCliente() {
+export async function eliminarCliente(id) {
     console.log('Eliminando .. ')
     console.log(id)
 }
