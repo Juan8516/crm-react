@@ -32,6 +32,9 @@ const router = createBrowserRouter([
         loader: editarClienteLoader,
         action: editarClienteAction,
         errorElement: <ErrorPage />
+      },
+      {
+        path: '/clientes/:clienteId/eliminar'
       }
     ]
   },
