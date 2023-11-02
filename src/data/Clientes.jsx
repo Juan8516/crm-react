@@ -39,3 +39,8 @@ export async function actualizarCliente(id, datos) {
         console.log(error)
     }
 }
+
+export async function eliminarCliente() {
+    console.log('Eliminando .. ')
+    console.log(id)
+}
