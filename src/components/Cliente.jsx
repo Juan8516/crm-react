@@ -31,18 +31,18 @@ function Cliente( {cliente} ) {
                     className='p-3 text-blue-600 hover:text-blue-700 uppercase font-bold text-xs'
                     onClick={() => navigate(`/clientes/${id}/editar`)}
                 >
-                    Editar
+                    EDITAR
                 </button>
 
                 <Form
                     method= 'post'
-                    action= {'/clientes/${id/eliminar'}
+                    action= {`/clientes/${id}/eliminar`}
                 >
                     <button
-                        type='button'
+                        type='submit'
                         className='p-3 text-red-600 hover:text-red-700 uppercase font-bold text-xs'
                     >
-                        ELiminar
+                        ELIMINAR
                     </button>
                 </Form>
 
