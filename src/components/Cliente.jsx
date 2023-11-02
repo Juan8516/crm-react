@@ -1,5 +1,11 @@
 import React from 'react'
 import { useNavigate, Form, redirect } from 'react-router-dom'
+import { eliminarCliente } from '../data/Clientes' 
+
+export async function action({ params }) {
+    eliminarCliente(params.clienteId)
+    return redirect('/')
+}
 
 function Cliente( {cliente} ) {
 
