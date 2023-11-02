@@ -24,3 +24,7 @@ export async function agregarCliente(datos) {
         console.log(error)
     }
 }
+
+export async function actualizarCliente(id, datos) {
+    
+}
